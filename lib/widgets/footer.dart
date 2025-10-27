@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants/app_constant.dart';
 import 'package:portfolio/constants/constant.dart';
-import '../main.dart'; // For launchURL
+import '../main.dart';
 
 class Footer extends StatelessWidget {
   const Footer({super.key});
@@ -17,7 +17,6 @@ class Footer extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 32),
       decoration: BoxDecoration(
         color: AppConstant().themeColor.withOpacity(0.1),
-        // borderRadius: const BorderRadius.vertical(top: Radius.circular(16)),
       ),
       child: LayoutBuilder(
         builder: (context, constraints) {
@@ -37,7 +36,6 @@ class Footer extends StatelessWidget {
           );
 
           Widget left = Column(
-            // crossAxisAlignment: CrossAxisAlignment.start,
             crossAxisAlignment: isPhone
                 ? CrossAxisAlignment.center
                 : CrossAxisAlignment.start,
@@ -89,7 +87,6 @@ class Footer extends StatelessWidget {
 
           if (isPhone) {
             return Column(
-              // crossAxisAlignment: CrossAxisAlignment.center,
               children: [left, const SizedBox(height: 16), right],
             );
           } else {

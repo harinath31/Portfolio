@@ -2,15 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/constants/app_constant.dart';
 import 'package:portfolio/constants/constant.dart';
 
-// If AppConstant is defined in another file, add the appropriate import.
-// import 'package:your_app/app_constant.dart';
 
 class SkillsCard extends StatelessWidget {
   const SkillsCard({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // final title = AppConstant().skillsTitle;
     final skills = Constants().userProfile.skills;
     final themeColor = AppConstant().themeColor;
     final icon = Icons.code;
@@ -28,7 +25,11 @@ class SkillsCard extends StatelessWidget {
               Text(
                 textAlign: TextAlign.center,
                 "Skills & Technologies",
-                style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.w900),
+                style: TextStyle(
+                  fontSize: 40.0,
+                  fontWeight: FontWeight.w900,
+                  height: isMobile ? 1.2 : null,
+                ),
               ),
               SizedBox(height: 4.0),
               Text(
@@ -45,14 +46,6 @@ class SkillsCard extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          // Text(
-                          //   title,
-                          //   style: TextStyle(
-                          //     fontSize: 22,
-                          //     fontWeight: FontWeight.bold,
-                          //     color: themeColor,
-                          //   ),
-                          // ),
                           const Spacer(),
                           Icon(icon, color: themeColor, size: 40),
                         ],
@@ -60,7 +53,7 @@ class SkillsCard extends StatelessWidget {
                       const SizedBox(height: 16),
                       Wrap(
                         spacing: 18,
-                        runSpacing: 18,
+                        runSpacing:constraints.maxWidth>550? 18:10,
                         children: skills
                             .map(
                               (skill) => Chip(

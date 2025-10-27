@@ -59,16 +59,15 @@ class Constants {
       SocialMedia(
         name: 'GitHub',
         asset: 'assets/images/github-mark.png',
-        url: 'https://github.com/harinath31', // update
+        url: 'https://github.com/harinath31',
         size: 25,
       ),
       SocialMedia(
         name: 'LinkedIn',
         asset: 'assets/images/LI-In-Bug.png',
-        url: 'https://www.linkedin.com/in/harinath-g-363295233/', // update
+        url: 'https://www.linkedin.com/in/harinath-g-363295233/',
         size: 27,
       ),
-      // add more SocialMedia(...) entries here
     ],
     educationList: [
       Education(

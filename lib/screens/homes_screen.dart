@@ -71,10 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
           child: const AboutSection(),
         );
       case 2:
-        return Padding(
-          padding: hPadding,
-          child: const ExperienceSection(),
-        );
+        return Padding(padding: hPadding, child: const ExperienceSection());
       case 3:
         return Container(
           padding: hPadding,
@@ -82,10 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
           child: const EducationSection(),
         );
       case 4:
-        return Padding(
-          padding: hPadding,
-          child: const SkillsCard(), // Assuming SkillsCard is exported from skills_section.dart
-        );
+        return Padding(padding: hPadding, child: const SkillsCard());
       case 5:
         return Container(
           padding: hPadding,
@@ -120,11 +114,7 @@ class _HomeScreenState extends State<HomeScreen> {
         Padding(
           padding: const EdgeInsets.only(right: 13.0),
           child: PopupMenuButton<int>(
-            icon: Icon(
-              Icons.menu,
-              color: AppConstant().themeColor,
-              size: 28,
-            ),
+            icon: Icon(Icons.menu, color: AppConstant().themeColor, size: 28),
             offset: const Offset(0, 50),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
@@ -160,7 +150,11 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  PopupMenuItem<int> _buildPopupMenuItem(IconData icon, String label, int value) {
+  PopupMenuItem<int> _buildPopupMenuItem(
+    IconData icon,
+    String label,
+    int value,
+  ) {
     return PopupMenuItem<int>(
       value: value,
       child: Row(
@@ -169,10 +163,7 @@ class _HomeScreenState extends State<HomeScreen> {
           const SizedBox(width: 12),
           Text(
             label,
-            style: const TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w500,
-            ),
+            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
           ),
         ],
       ),
@@ -192,7 +183,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 horizontal: isPhone ? 13 : 68.0,
                 vertical: isPhone ? 0 : 16.0,
               ),
-              child:  Text(
+              child: Text(
                 'Harinath G',
                 style: TextStyle(
                   fontSize: 24,

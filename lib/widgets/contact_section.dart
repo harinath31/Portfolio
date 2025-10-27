@@ -19,10 +19,10 @@ class _ContactSectionState extends State<ContactSection> {
   final _subjectCtl = TextEditingController();
   final _messageCtl = TextEditingController();
 
-  static const double _pillRadius = 30.0; // Adjusted radius for a softer look
+  static const double _pillRadius = 30.0;
   static const _border = OutlineInputBorder(
     borderRadius: BorderRadius.all(Radius.circular(_pillRadius)),
-    borderSide: BorderSide(color: Colors.grey, width: 1.5), // Softer border
+    borderSide: BorderSide(color: Colors.grey, width: 1.5),
   );
 
   @override
@@ -159,7 +159,6 @@ class _ContactSectionState extends State<ContactSection> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              // Add the "Contact Me" heading here
               Text(
                 'Contact Me',
                 style: TextStyle(
@@ -168,7 +167,7 @@ class _ContactSectionState extends State<ContactSection> {
                   color: AppConstant().themeColor,
                 ),
               ),
-              const SizedBox(height: 16), // Space between heading and form
+              const SizedBox(height: 16),
               formCard(isNotPhone, fieldSpacing),
             ],
           ),
@@ -283,7 +282,7 @@ class _ContactSectionState extends State<ContactSection> {
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           letterSpacing: 1.2,
-                          color: Colors.white, // Improved contrast
+                          color: Colors.white,
                         ),
                       ),
                     ),

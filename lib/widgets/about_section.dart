@@ -65,31 +65,13 @@ class AboutSection extends StatelessWidget {
                   ? constraints.maxWidth < 550
                         ? Column(
                             children: [
-                              IntrinsicHeight(
-                                child: Row(
-                                  children: [Expanded(child: featureCards[0])],
-                                ),
-                              ),
+                              Row(children: [Expanded(child: featureCards[0])]),
                               const SizedBox(height: 16.0),
-                              IntrinsicHeight(
-                                child: Row(
-                                  children: [Expanded(child: featureCards[1])],
-                                ),
-                              ),
+                              Row(children: [Expanded(child: featureCards[1])]),
                               const SizedBox(height: 16.0),
-                              IntrinsicHeight(
-                                child: Row(
-                                  children: [Expanded(child: featureCards[2])],
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 16.0,
-                              ), // Spacing between rows
-                              IntrinsicHeight(
-                                child: Row(
-                                  children: [Expanded(child: featureCards[3])],
-                                ),
-                              ),
+                              Row(children: [Expanded(child: featureCards[2])]),
+                              const SizedBox(height: 16.0),
+                              Row(children: [Expanded(child: featureCards[3])]),
                             ],
                           )
                         : Column(
@@ -103,9 +85,7 @@ class AboutSection extends StatelessWidget {
                                   ],
                                 ),
                               ),
-                              const SizedBox(
-                                height: 16.0,
-                              ), // Spacing between rows
+                              const SizedBox(height: 16.0),
                               IntrinsicHeight(
                                 child: Row(
                                   children: [
@@ -180,13 +160,10 @@ class AboutSection extends StatelessWidget {
                 : Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      // Left descriptive column
                       Expanded(
                         flex: 3,
                         child: journeyDescriptionText(isMobile),
                       ),
-
-                      // Right stats column
                       SizedBox(width: isMobile ? 12.0 : 32.0),
                       Expanded(
                         flex: 2,
@@ -294,15 +271,13 @@ class AboutSection extends StatelessWidget {
     required String description,
   }) {
     return Expanded(
-      // Changed to Expanded for consistent width in Row
       child: Card(
         child: Padding(
-          // Simplified from Container to Padding for brevity
           padding: const EdgeInsets.all(16.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment:
-                CrossAxisAlignment.center, // Ensures centered content
+                CrossAxisAlignment.center, 
             children: [
               Container(
                 padding: const EdgeInsets.all(8.0),
@@ -325,9 +300,7 @@ class AboutSection extends StatelessWidget {
               Text(
                 description,
                 textAlign: TextAlign.center,
-                style: const TextStyle(
-                  fontSize: 14.0,
-                ), // Slightly smaller for mobile fit
+                style: const TextStyle(fontSize: 14.0),
               ),
             ],
           ),
