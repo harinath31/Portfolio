@@ -19,7 +19,7 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.24.3'  # Latest stable as of Oct 2025; matches your pubspec ^3.9.x
+          flutter-version: '3.35.7'  # Fixed: Supports Dart ^3.9.2
           channel: 'stable'
 
       - name: Get dependencies
