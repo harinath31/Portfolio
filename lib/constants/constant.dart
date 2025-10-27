@@ -99,7 +99,7 @@ class Constants {
         subtitle: 'Syncfusion Software Pvt Ltd, Chennai',
         duration: '05/2022 – Present',
         bulletPoints: [
-          'Developed and optimized cross-platform mobile applications using Flutter and Dart, delivering seamless performance across iOS and Android platforms.',
+          'Developed and optimized the cross-platform BoldDesk mobile application (available on the Play Store) using Flutter and Dart, delivering seamless performance on both iOS and Android.',
           'Implemented RESTful API integrations, Bloc state management, and push notifications for real-time, interactive user experiences.',
           'Improved UI/UX designs, ensured responsive layouts, and optimized app performance through structured, scalable architecture.',
           'Contributed to Bold Desk – Ticket Management System, enhancing modules for ticket handling, activity tracking, and real-time chat to ensure smooth synchronization across devices.',
