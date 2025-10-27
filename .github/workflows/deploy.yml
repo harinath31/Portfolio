@@ -19,14 +19,14 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.1'  # Or specify exact, e.g., '3.24.3'
+          flutter-version: '3.24.3'  # Latest stable as of Oct 2025; matches your pubspec ^3.9.x
           channel: 'stable'
 
       - name: Get dependencies
         run: flutter pub get
 
       - name: Build web
-        run: flutter build web --release --base-href "/harinath31-Portfolio/"  # Replace with your exact repo name, e.g., "/my_flutter_app/"
+        run: flutter build web --release --base-href "/harinath31-Portfolio/"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
