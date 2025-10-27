@@ -128,9 +128,9 @@ class IntroSection extends StatelessWidget {
                 style: TextStyle(color: Colors.white),
               ),
               style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 22,
-                  vertical: 18,
+                padding: EdgeInsets.symmetric(
+                  horizontal: isNotPhone ? 22 : 20,
+                  vertical: isNotPhone ? 18 : 16,
                 ),
                 shape: const StadiumBorder(),
                 backgroundColor: AppConstant().themeColor,
@@ -139,9 +139,9 @@ class IntroSection extends StatelessWidget {
             OutlinedButton(
               onPressed: viewContact,
               style: OutlinedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 22,
-                  vertical: 18,
+                padding:  EdgeInsets.symmetric(
+                  horizontal: isNotPhone ? 22 : 20,
+                  vertical: isNotPhone ? 18 : 16,
                 ),
                 shape: const StadiumBorder(),
                 side: BorderSide(color: Colors.black12),
