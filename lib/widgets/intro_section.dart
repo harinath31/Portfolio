@@ -75,7 +75,6 @@ class IntroSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // small tag
         SizedBox(height: isNotPhone ? 20 : 18),
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 5),
