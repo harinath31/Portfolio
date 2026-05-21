@@ -14,9 +14,9 @@ class Constants {
     role: "Flutter Developer",
     introHeader: "Building innovative solutions with Flutter.",
     introDiscription:
-        '''I'm a Flutter developer with 3+ years of experience. I have a passion for creating clean, efficient code and finding innovative solutions to complex problems.''',
+        '''I'm a Flutter developer with 4+ years of experience. I have a passion for creating clean, efficient code and finding innovative solutions to complex problems.''',
     aboutHeaderDiscription:
-        '''I'm a Flutter developer with a degree 3+ years of experience. I have experience working with a variety of technologies, including HTML, CSS, JavaScript, angular, Flutter, and blazor. I specialize in creating clean, efficient code and finding innovative solutions to complex problems.''',
+        '''I'm a Flutter developer with a degree 4+ years of experience. I have experience working with a variety of technologies, including HTML, CSS, JavaScript, angular, Flutter, and blazor. I specialize in creating clean, efficient code and finding innovative solutions to complex problems.''',
     aboutDescriptionList: [
       AboutDescriptionModel(
         icon: Icons.code,
